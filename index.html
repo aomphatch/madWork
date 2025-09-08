@@ -42,11 +42,11 @@
         scene.add(ambientLight);
 
         const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
-        directionalLight.position.set(5, 8, 3);
+        directionalLight.position.set(5, 7, -3);
         directionalLight.castShadow = true;
         directionalLight.shadow.mapSize.set(1024, 1024);
         directionalLight.shadow.camera.near = 0.5;
-        directionalLight.shadow.camera.far = 20;
+        directionalLight.shadow.camera.far = 100;
         directionalLight.shadow.camera.left = -5;
         directionalLight.shadow.camera.right = 5;
         directionalLight.shadow.camera.top = 5;
@@ -127,3 +127,4 @@
 </body>
 
 </html>
+
